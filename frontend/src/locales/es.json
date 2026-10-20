@@ -1,0 +1,272 @@
+{
+    "common": {
+        "all": "Todos",
+        "save": "Guardar",
+        "cancel": "Cancelar",
+        "delete": "Eliminar",
+        "edit": "Editar",
+        "details": "Detalles",
+        "deploy": "Desplegar",
+        "actions": "Acciones",
+        "status": "Estado",
+        "date": "Fecha",
+        "success": "Éxito",
+        "error": "Error",
+        "menu_principal": "Menú Principal",
+        "connect": "Conectar",
+        "confirm_action": "Confirmar Acción",
+        "region": "Región",
+        "stopped": "Detenido",
+        "close": "Cerrar",
+        "close_keep_running": "Cerrar ventana (Seguirá corriendo)"
+    },
+    "menu": {
+        "dashboard": "Dashboard",
+        "generator": "Generador",
+        "library": "Librería",
+        "deployments": "Despliegues",
+        "resources": "Recursos",
+        "tenants": "Tenants de Azure",
+        "scripts": "Scripts",
+        "admin": "Administración"
+    },
+    "dashboard": {
+        "welcome": "Bienvenido a",
+        "subtitle": "El motor avanzado impulsado por IA para generar, administrar y desplegar tu infraestructura de Azure con Terraform en tiempo récord.",
+        "stats": {
+            "successful": "Exitosos",
+            "failed": "Fallidos",
+            "total_ops": "Operaciones Tot.",
+            "tenants": "Tenants",
+            "weekly_trend": "Tendencia de Actividad Semanal",
+            "success_rate": "Tasa de Éxito",
+            "deployments_by_tenant": "Despliegues por Tenant",
+            "resource_composition": "Composición de Recursos por Tenant",
+            "total_resources": "Recursos Totales",
+            "alerts": {
+                "title": "Alertas Operativas",
+                "no_alerts": "No hay alertas críticas en este momento.",
+                "high_consumption_warning": "Se detectó alto consumo de CPU en el recurso {{name}}",
+                "failed_deployment": "El despliegue {{name}} falló en el tenant {{tenant}}"
+            },
+            "recent_activity": {
+                "title": "Actividad Reciente",
+                "view_all": "Ver todos los despliegues"
+            }
+        },
+        "quick_start": {
+            "title": "Inicio Rápido",
+            "generator_desc": "Usa IA para crear código de infraestructura en segundos.",
+            "tenants_desc": "Configura tus credenciales para despliegue directo."
+        },
+        "footer": "© {{year}} Jhamf Group S.A.S — Todos los derechos reservados"
+    },
+    "generator": {
+        "title": "Generador AI de Terraform",
+        "subtitle": "Describe la infraestructura que deseas construir en Azure.",
+        "template_name": "Nombre de la Plantilla",
+        "template_name_placeholder": "ej. Servidor Web Ubuntu con IP Pública",
+        "category": "Categoría",
+        "category_placeholder": "Seleccionar categoría",
+        "describe_resource": "Describe tu recurso",
+        "describe_resource_placeholder": "ej. Una VM Linux Ubuntu con 8GB de RAM y una IP Pública",
+        "generate": "Generar",
+        "save_to_library": "Guardar en Librería",
+        "deploy_now": "Desplegar Ahora",
+        "extracted_variables": "Variables Extraídas",
+        "no_description": "Sin descripción",
+        "dynamic_scaling": "Escalado Dinámico",
+        "recalculate_cost": "Recalcular Costo",
+        "update_budget_success": "Presupuesto actualizado"
+    },
+    "library": {
+        "title": "Librería de Plantillas",
+        "subtitle": "Tus componentes de infraestructura reutilizables categorizados.",
+        "new_template": "Nueva Plantilla",
+        "no_templates_category": "No hay plantillas en esta categoría",
+        "try_another_category": "Intenta seleccionar otra categoría o crea una nueva plantilla.",
+        "no_templates": "No se encontraron plantillas en tu librería.",
+        "create_first": "Crea tu primera plantilla",
+        "no_description_provided": "No se proporcionó descripción."
+    },
+    "deployments": {
+        "title": "Despliegues",
+        "subtitle": "Historial y estado de tus despliegues de infraestructura.",
+        "clear_all": "Limpiar Todo",
+        "template": "Plantilla",
+        "tenant": "Tenant"
+    },
+    "tenants": {
+        "title": "Tenants de Azure",
+        "subtitle": "Administra tus suscripciones de Azure conectadas.",
+        "new_tenant": "Conectar Tenant",
+        "no_tenants": "Aún no hay tenants de Azure conectados.",
+        "connect_first": "Conecta tu primer tenant de Azure para empezar a desplegar plantillas.",
+        "name": "Nombre",
+        "subscription_id": "ID de Suscripción",
+        "client_id": "ID de Cliente",
+        "tenant_id": "ID de Tenant",
+        "public_ip": "IP Pública",
+        "private_ip": "IP Privada"
+    },
+    "modals": {
+        "template_details": {
+            "variables": "Variables",
+            "terraform_code": "Código Terraform",
+            "no_description": "No se proporcionó descripción para esta plantilla.",
+            "created": "Creado:",
+            "default": "Por defecto: {{val}}",
+            "enter_value": "Ingresa valor para {{name}}",
+            "no_variables": "No hay variables definidas en esta plantilla.",
+            "edit_code": "Editar Código",
+            "save_changes": "Guardar Cambios",
+            "prepare_deployment": "Preparar Despliegue"
+        },
+        "deploy": {
+            "title": "Desplegar: {{name}}",
+            "azure_tenant": "Tenant de Azure",
+            "select_tenant": "Selecciona un tenant conectado",
+            "parameters": "Parámetros",
+            "no_variables": "Esta plantilla no requiere variables.",
+            "execute_deployment": "Ejecutar Despliegue"
+        },
+        "logs": {
+            "title": "Logs de Despliegue",
+            "not_available": "No hay logs disponibles para este despliegue.",
+            "smart_advice": "Consejo Inteligente",
+            "advice": {
+                "overlap_title": "Conflicto de Rango de IP detectado",
+                "overlap_msg": "Tu subred se traslapa con una existente. Usa un rango CIDR diferente como 10.0.50.0/24 o usa la función dinámica cidrsubnet().",
+                "sub_id_title": "ID de Suscripción Inválido",
+                "sub_id_msg": "El formato del ID de suscripción es incorrecto. Por favor, verifica que no haya espacios al inicio o final en la configuración de tu Tenant.",
+                "auth_title": "Permiso de Azure Denegado",
+                "auth_msg": "Tu Service Principal no tiene suficientes permisos RBAC. Asegúrate de que tenga acceso de 'Colaborador' o 'Propietario'.",
+                "not_found_title": "Dependencia no Encontrada",
+                "not_found_msg": "Un recurso referenciado (como una VNet o Grupo de Recursos) no existe en tu suscripción.",
+                "quota_title": "Cuota de Azure Excedida",
+                "quota_msg": "Has alcanzado el límite para este tipo de recurso en tu región. Considera eliminar recursos antiguos.",
+                "module_title": "Error de Estructura de Módulos",
+                "module_msg": "La IA intentó agrupar el código en carpetas que no existen. Se te recomienda eliminar esta plantilla y generar otra nueva con mejor consistencia plana.",
+                "generic_title": "Detalle de Error de Despliegue",
+                "generic_msg": "Terraform se encontró con un obstáculo. Revisa los logs de la consola interactiva en la parte superior para identificar el error exacto."
+            }
+        }
+    },
+    "scripts": {
+        "title": "Librería de Scripts",
+        "subtitle": "Gestiona scripts automatizados para inyectar en tus recursos de Azure.",
+        "new_script": "Nuevo Script",
+        "powershell_desc": "Scripts para automatización en entornos Windows Server y Azure Core.",
+        "bash_desc": "Scripts para configuración de distribuciones Linux (Ubuntu, Debian, etc).",
+        "scripts_for": "Scripts de {{lang}}",
+        "manage_for": "Administra tus herramientas de automatización para {{os}}.",
+        "no_scripts": "No hay scripts en esta categoría",
+        "create_first": "Crea el primer script de {{lang}}",
+        "delete_confirm": "¿Estás seguro de que deseas eliminar este script? Esta acción no se puede deshacer.",
+        "deleted": "Script eliminado",
+        "delete_error": "Error al eliminar el script",
+        "no_description": "Sin descripción proporcionada.",
+        "categories": {
+            "installation": "Instalación",
+            "configuration": "Configuración",
+            "maintenance": "Mantenimiento",
+            "monitoring": "Monitoreo",
+            "security": "Seguridad",
+            "deployment": "Despliegue",
+            "troubleshooting": "Depuración",
+            "utilities": "Utilidades",
+            "other": "Otros"
+        }
+    },
+    "resources": {
+        "subtitle": "Explora los recursos desplegados por cada Tenant de Azure.",
+        "total_resources": "Recursos Totales",
+        "no_resources": "Sin recursos registrados",
+        "no_resources_desc": "No se han encontrado implementaciones activas con inventario de recursos.",
+        "delete_tenant_title": "Eliminar Tenant: {{name}}",
+        "delete_tenant_msg": "¿Estás seguro de que deseas eliminar este Tenant de tu vista de recursos?",
+        "delete_tenant_warning": "Esto eliminará el Tenant y sus registros locales. Los recursos en Azure NO se verán afectados.",
+        "delete_tenant_irreversible": "Atención: Esta es una acción irreversible.",
+        "delete_all": "Eliminar todo",
+        "tenant_deleted": "Tenant {{name}} y sus registros eliminados.",
+        "delete_error": "Error al eliminar el tenant",
+        "deployments_page": {
+            "title": "Implementaciones en {{name}}",
+            "subtitle": "Selecciona una implementación para ver sus recursos detallados.",
+            "detected": "Recursos Detectados",
+            "delete_deployment_msg": "¿Estás seguro de que deseas eliminar esta implementación? TerraFormars intentará eliminar automáticamente el Grupo de Recursos asociado en Azure para evitar cargos innecesarios.",
+            "deployment_deleted": "Implementación eliminada del registro",
+            "delete_error": "Error al eliminar el registro"
+        },
+        "monitoring": {
+            "title": "Recursos del Despliegue",
+            "subtitle": "Administra y monitorea el estado de tu infraestructura.",
+            "tabs": {
+                "compute": "Cómputo",
+                "networking": "Redes",
+                "other": "Otros"
+            },
+            "metrics": {
+                "cpu": "USO DE CPU",
+                "network": "TRÁFICO DE RED (ENTRADA/SALIDA)",
+                "disk": "ACTIVIDAD DE DISCO (IO)",
+                "memory": "MEMORIA DISPONIBLE"
+            },
+            "status": {
+                "syncing": "Sincronizando...",
+                "running": "En ejecución",
+                "stopped": "Apagada",
+                "starting": "Iniciando...",
+                "updating": "Actualizando...",
+                "deleting": "Eliminando...",
+                "active": "Activo",
+                "success": "Exitoso",
+                "failed": "Fallido",
+                "creating": "Creando",
+                "available": "Disponible",
+                "pending": "Pendiente",
+                "cancelled": "Cancelado",
+                "no_inventory": "Sin inventario",
+                "no_inventory_desc": "Esta implementación no registró inventario de recursos.",
+                "no_resources_type": "No se encontraron recursos de este tipo."
+            },
+            "scripts": {
+                "label": "Script para ejecutar",
+                "placeholder": "Selecciona de la librería",
+                "execute": "Ejecutar Script",
+                "result_title": "Resultado de Ejecución",
+                "success_msg": "El comando se completó con éxito en Azure.",
+                "output_label": "Salida del Sistema:",
+                "error_select": "Selecciona un script primero",
+                "stopped_msg": "La ejecución ha sido cancelada.",
+                "stop_error": "No se pudo detener la ejecución.",
+                "terminal_title": "Terminal de Ejecución",
+                "script_label": "Script",
+                "init_msg": "Iniciando ejecución en Azure...",
+                "connect_msg": "Conectando con la VM...",
+                "wait_msg": "La ejecución puede tardar varios minutos dependiendo del script.",
+                "finished_msg": "Ejecución finalizada.",
+                "stop_button": "Detener Script"
+            }
+        }
+    },
+    "admin": {
+        "subtitle": "Visualiza y opera todos los recursos de Azure de tus tenants sin salir de la plataforma.",
+        "no_tenants": "Sin tenants disponibles",
+        "no_tenants_desc": "Conecta un tenant de Azure para ver sus recursos aquí.",
+        "no_resources_type": "No se encontraron recursos de este tipo.",
+        "tenant_subtitle": "Navega y administra todos los recursos desplegados de este tenant.",
+        "tenant": "Tenant",
+        "resource_info": "Información del Recurso",
+        "console_no_deployment": "Esta VM no fue encontrada en ningún despliegue registrado. La ejecución de scripts requiere un registro de despliegue.",
+        "tabs": {
+            "vms": "Máquinas Virtuales",
+            "aks": "Clústeres AKS",
+            "appservices": "App Services",
+            "databases": "Bases de Datos",
+            "vnets": "Redes Virtuales",
+            "metrics": "Métricas en Vivo",
+            "console": "Consola de Scripts"
+        }
+    }
+}

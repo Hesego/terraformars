@@ -1,0 +1,271 @@
+{
+    "common": {
+        "all": "All",
+        "save": "Save",
+        "cancel": "Cancel",
+        "delete": "Delete",
+        "edit": "Edit",
+        "details": "Details",
+        "deploy": "Deploy",
+        "actions": "Actions",
+        "status": "Status",
+        "date": "Date",
+        "success": "Success",
+        "error": "Error",
+        "menu_principal": "Main Menu",
+        "connect": "Connect",
+        "confirm_action": "Confirm Action",
+        "region": "Region",
+        "stopped": "Stopped",
+        "close": "Close",
+        "close_keep_running": "Close window (Will keep running)"
+    },
+    "menu": {
+        "dashboard": "Dashboard",
+        "generator": "Generator",
+        "library": "Library",
+        "deployments": "Deployments",
+        "resources": "Resources",
+        "tenants": "Azure Tenants",
+        "scripts": "Scripts",
+        "admin": "Administration"
+    },
+    "dashboard": {
+        "welcome": "Welcome to",
+        "subtitle": "The most advanced AI-powered engine to generate, manage and deploy your Azure infrastructure with Terraform in record time.",
+        "stats": {
+            "successful": "Successful",
+            "failed": "Failed",
+            "total_ops": "Total Ops",
+            "tenants": "Tenants",
+            "weekly_trend": "Weekly Activity Trend",
+            "success_rate": "Success Rate",
+            "deployments_by_tenant": "Deployments by Tenant",
+            "resource_composition": "Resource Composition per Tenant",
+            "total_resources": "Total Resources",
+            "alerts": {
+                "title": "Operational Alerts",
+                "no_alerts": "No critical alerts at this time.",
+                "high_consumption_warning": "High CPU consumption detected in resource {{name}}",
+                "failed_deployment": "Deployment {{name}} failed in tenant {{tenant}}"
+            },
+            "recent_activity": {
+                "title": "Recent Activity",
+                "view_all": "View all deployments"
+            }
+        },
+        "quick_start": {
+            "title": "Quick Start",
+            "generator_desc": "Use AI to create infrastructure code in seconds.",
+            "tenants_desc": "Set up your credentials for direct deployment."
+        },
+        "footer": "© {{year}} Jhamf Group S.A.S — All rights reserved"
+    },
+    "generator": {
+        "title": "AI Terraform Generator",
+        "subtitle": "Describe the infrastructure you want to build in Azure.",
+        "template_name": "Template Name",
+        "template_name_placeholder": "e.g. Ubuntu Web Server with Public IP",
+        "category": "Category",
+        "category_placeholder": "Select category",
+        "describe_resource": "Describe your resource",
+        "describe_resource_placeholder": "e.g. A Linux Ubuntu VM with 8GB RAM and an Public IP",
+        "generate": "Generate",
+        "save_to_library": "Save to Library",
+        "deploy_now": "Deploy Now",
+        "extracted_variables": "Extracted Variables",
+        "no_description": "No description",
+        "dynamic_scaling": "Dynamic Scaling",
+        "recalculate_cost": "Recalculate Cost",
+        "update_budget_success": "Budget updated successfully"
+    },
+    "library": {
+        "title": "Template Library",
+        "subtitle": "Your reusable infrastructure components categorized by resource type.",
+        "new_template": "New Template",
+        "no_templates_category": "No templates in this category",
+        "try_another_category": "Try selecting another category or create a new template.",
+        "no_templates": "No templates found in your library.",
+        "create_first": "Create your first template",
+        "no_description_provided": "No description provided."
+    },
+    "deployments": {
+        "title": "Deployments",
+        "subtitle": "History and status of your infrastructure deployments.",
+        "clear_all": "Clear All",
+        "template": "Template",
+        "tenant": "Tenant"
+    },
+    "tenants": {
+        "title": "Azure Tenants",
+        "subtitle": "Manage your connected Azure subscriptions.",
+        "new_tenant": "Connect Tenant",
+        "no_tenants": "No Azure tenants connected yet.",
+        "connect_first": "Connect your first Azure tenant to start deploying templates.",
+        "name": "Name",
+        "subscription_id": "Subscription ID",
+        "client_id": "Client ID",
+        "tenant_id": "Tenant ID",
+        "public_ip": "Public IP",
+        "private_ip": "Private IP"
+    },
+    "modals": {
+        "template_details": {
+            "variables": "Variables",
+            "terraform_code": "Terraform Code",
+            "no_description": "No description provided for this template.",
+            "created": "Created:",
+            "default": "Default: {{val}}",
+            "enter_value": "Enter value for {{name}}",
+            "no_variables": "No variables defined in this template.",
+            "edit_code": "Edit Code",
+            "save_changes": "Save Changes",
+            "prepare_deployment": "Prepare Deployment"
+        },
+        "deploy": {
+            "title": "Deploy: {{name}}",
+            "azure_tenant": "Azure Tenant",
+            "select_tenant": "Select a connected tenant",
+            "parameters": "Parameters",
+            "no_variables": "This template doesn't require any variables.",
+            "execute_deployment": "Execute Deployment"
+        },
+        "logs": {
+            "title": "Deployment Logs",
+            "not_available": "No logs available for this deployment.",
+            "smart_advice": "Smart Advice",
+            "advice": {
+                "overlap_title": "IP Range Conflict Detected",
+                "overlap_msg": "Your subred overlaps with an existing one. Use a different CIDR range like 10.0.50.0/24 or use the dynamic cidrsubnet() function.",
+                "sub_id_title": "Invalid Subscription ID",
+                "sub_id_msg": "The Subscription ID format is incorrect. Please check for leading/trailing spaces in your Tenant settings.",
+                "auth_title": "Azure Permission Denied",
+                "auth_msg": "Your Service Principal lacks sufficient RBAC permissions. Please ensure it has 'Contributor' or 'Owner' access.",
+                "not_found_title": "Dependency Not Found",
+                "not_found_msg": "A referenced resource (like a VNet or Resource Group) does not exist in your subscription.",
+                "quota_title": "Azure Quota Exceeded",
+                "quota_msg": "You have reached the limit for this resource type in your region. Consider deleting old resources.",
+                "generic_title": "Deployment Error Detail",
+                "generic_msg": "Terraform encountered an obstacle. Check the interactive console logs above to identify the exact error."
+            }
+        }
+    },
+
+    "scripts": {
+        "title": "Script Library",
+        "subtitle": "Manage automated scripts to inject into your Azure resources.",
+        "new_script": "New Script",
+        "powershell_desc": "Scripts for automation in Windows Server and Azure Core environments.",
+        "bash_desc": "Scripts for configuring Linux distributions (Ubuntu, Debian, etc).",
+        "scripts_for": "Scripts for {{lang}}",
+        "manage_for": "Manage your automation tools for {{os}}.",
+        "no_scripts": "No scripts in this category",
+        "create_first": "Create the first {{lang}} script",
+        "delete_confirm": "Are you sure you want to delete this script? This action cannot be undone.",
+        "deleted": "Script deleted",
+        "delete_error": "Error deleting the script",
+        "no_description": "No description provided.",
+        "categories": {
+            "installation": "Installation",
+            "configuration": "Configuration",
+            "maintenance": "Maintenance",
+            "monitoring": "Monitoring",
+            "security": "Security",
+            "deployment": "Deployment",
+            "troubleshooting": "Troubleshooting",
+            "utilities": "Utilities",
+            "other": "Other"
+        }
+    },
+    "resources": {
+        "subtitle": "Explore resources deployed by each Azure Tenant.",
+        "total_resources": "Total Resources",
+        "no_resources": "No resources registered",
+        "no_resources_desc": "No active deployments with resource inventory were found.",
+        "delete_tenant_title": "Delete Tenant: {{name}}",
+        "delete_tenant_msg": "Are you sure you want to delete this Tenant from your resources view?",
+        "delete_tenant_warning": "This will delete the Tenant and its local records. Azure resources will NOT be affected.",
+        "delete_tenant_irreversible": "Attention: This is an irreversible action.",
+        "delete_all": "Delete All",
+        "tenant_deleted": "Tenant {{name}} and its records deleted.",
+        "delete_error": "Error deleting the tenant",
+        "deployments_page": {
+            "title": "Deployments in {{name}}",
+            "subtitle": "Select a deployment to see its detailed resources.",
+            "detected": "Detected Resources",
+            "delete_deployment_msg": "Are you sure you want to delete this deployment? TerraFormars will automatically attempt to delete the associated Azure Resource Group to avoid unnecessary charges.",
+            "deployment_deleted": "Deployment removed from record",
+            "delete_error": "Error deleting the record"
+        },
+        "monitoring": {
+            "title": "Deployment Resources",
+            "subtitle": "Manage and monitor the status of your infrastructure.",
+            "tabs": {
+                "compute": "Compute",
+                "networking": "Networking",
+                "other": "Other"
+            },
+            "metrics": {
+                "cpu": "CPU USAGE",
+                "network": "NETWORK TRAFFIC (IN/OUT)",
+                "disk": "DISK ACTIVITY (IO)",
+                "memory": "AVAILABLE MEMORY"
+            },
+            "status": {
+                "syncing": "Syncing...",
+                "running": "Running",
+                "stopped": "Stopped",
+                "starting": "Starting...",
+                "updating": "Updating...",
+                "deleting": "Deleting...",
+                "active": "Active",
+                "success": "Succeeded",
+                "failed": "Error",
+                "creating": "Creating",
+                "available": "Available",
+                "pending": "Pending",
+                "cancelled": "Cancelled",
+                "no_inventory": "No inventory",
+                "no_inventory_desc": "This deployment did not register a resource inventory.",
+                "no_resources_type": "No resources of this type found."
+            },
+            "scripts": {
+                "label": "Script to execute",
+                "placeholder": "Select from library",
+                "execute": "Execute Script",
+                "result_title": "Execution Result",
+                "success_msg": "The command completed successfully in Azure.",
+                "output_label": "System Output:",
+                "error_select": "Select a script first",
+                "stopped_msg": "Execution has been cancelled.",
+                "stop_error": "Could not stop execution.",
+                "terminal_title": "Execution Terminal",
+                "script_label": "Script",
+                "init_msg": "Starting execution in Azure...",
+                "connect_msg": "Connecting to VM",
+                "wait_msg": "Execution may take several minutes depending on the script.",
+                "finished_msg": "Execution finished.",
+                "stop_button": "Stop Script"
+            }
+        }
+    },
+    "admin": {
+        "subtitle": "View and operate all Azure resources across your tenants without leaving the platform.",
+        "no_tenants": "No tenants available",
+        "no_tenants_desc": "Connect an Azure tenant to see its resources here.",
+        "no_resources_type": "No resources of this type found.",
+        "tenant_subtitle": "Browse and manage all deployed resources for this tenant.",
+        "tenant": "Tenant",
+        "resource_info": "Resource Information",
+        "console_no_deployment": "This VM was not found in any tracked deployment. Script execution requires a deployment record.",
+        "tabs": {
+            "vms": "Virtual Machines",
+            "aks": "AKS Clusters",
+            "appservices": "App Services",
+            "databases": "Databases",
+            "vnets": "Virtual Networks",
+            "metrics": "Live Metrics",
+            "console": "Script Console"
+        }
+    }
+}

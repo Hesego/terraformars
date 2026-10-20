@@ -1,0 +1,96 @@
+version: "3.7"
+
+services:
+  frontend:
+    image: jhamfgit/terraformars-frontend:latest
+    networks:
+      - jhamfstack
+    deploy:
+      mode: replicated
+      replicas: 1
+      placement:
+        constraints:
+          - node.role == manager
+      labels:
+        - traefik.enable=true
+        - traefik.http.routers.terraform-app.rule=Host(`terraformars.devops.hesegoingenieria.com`)
+        - traefik.http.services.terraform-app.loadbalancer.server.port=3000
+        - traefik.http.routers.terraform-app.entrypoints=websecure
+        - traefik.http.routers.terraform-app.tls.certresolver=letsencryptresolver
+
+  backend:
+    image: jhamfgit/terraformars-api:latest
+    networks:
+      - jhamfstack
+    environment:
+      - PORT=3001
+      - NODE_ENV=production
+      - DB_HOST=tf-db
+      - DB_PORT=5432
+      - DB_USERNAME=${DB_USERNAME:-postgres}
+      - DB_PASSWORD=${DB_PASSWORD:-postgres}
+      - DB_DATABASE=terraformars
+      - REDIS_HOST=tf-redis
+      - REDIS_PORT=6379
+      - REDIS_PASSWORD=${REDIS_PASSWORD:-terraformars123}
+      - JWT_SECRET=${JWT_SECRET}
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - ALLOWED_ORIGINS=https://terraformars.devops.hesegoingenieria.com
+      - FRONTEND_URL=https://terraformars.devops.hesegoingenieria.com
+      - ENCRYPTION_KEY=${ENCRYPTION_KEY}
+    volumes:
+      - terraformars_uploads:/app/uploads
+      - terraformars_data:/app/terraform_data
+    deploy:
+      mode: replicated
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+        delay: 10s
+      placement:
+        constraints:
+          - node.role == manager
+      labels:
+        - traefik.enable=true
+        - traefik.http.routers.terraform-api.rule=Host(`apiterraformars.devops.hesegoingenieria.com`)
+        - traefik.http.services.terraform-api.loadbalancer.server.port=3001
+        - traefik.http.routers.terraform-api.entrypoints=websecure
+        - traefik.http.routers.terraform-api.tls.certresolver=letsencryptresolver
+
+  tf-db:
+    image: postgres:15-alpine
+    networks:
+      - jhamfstack
+    environment:
+      - POSTGRES_USER=${DB_USERNAME:-postgres}
+      - POSTGRES_PASSWORD=${DB_PASSWORD:-postgres}
+      - POSTGRES_DB=terraformars
+    volumes:
+      - terraformars_db_data:/var/lib/postgresql/data
+    deploy:
+      mode: replicated
+      replicas: 1
+      placement:
+        constraints:
+          - node.role == manager
+
+  tf-redis:
+    image: redis:alpine
+    command: ["redis-server", "--requirepass", "${REDIS_PASSWORD:-terraformars123}"]
+    networks:
+      - jhamfstack
+    deploy:
+      mode: replicated
+      replicas: 1
+      placement:
+        constraints:
+          - node.role == manager
+
+volumes:
+  terraformars_db_data:
+  terraformars_uploads:
+  terraformars_data:
+
+networks:
+  jhamfstack:
+    external: true

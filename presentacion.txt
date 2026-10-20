@@ -1,0 +1,278 @@
+# 🎤 Guion de Presentación — TerraFormars
+### Evento / Conferencia — 15 a 20 minutos
+**Jhamf Group S.A.S.**
+
+---
+
+> **Cómo leer este guion:**
+> - 🗣️ **Texto en negrita** = lo que dices en voz alta
+> - 📌 *Texto en cursiva* = nota del presentador (no se dice)
+> - ⏱️ = tiempo estimado de cada sección
+> - 🖥️ = acción en pantalla o demo
+
+---
+
+## ⏱️ DURACIÓN TOTAL: 17–20 minutos
+
+| Acto | Sección | Tiempo |
+|---|---|---|
+| 1 | Apertura e Impacto | 1.5 min |
+| 2 | El Problema | 2 min |
+| 3 | La Solución — TerraFormars | 1.5 min |
+| 4 | Demo en Vivo — Parte 1: El Generador IA | 3 min |
+| 5 | Demo en Vivo — Parte 2: El Despliegue | 3 min |
+| 6 | Demo en Vivo — Parte 3: Administración | 2 min |
+| 7 | Arquitectura Técnica | 2 min |
+| 8 | Cierre y Call to Action | 2 min |
+
+---
+
+## 🎬 ACTO 1 — Apertura e Impacto
+### ⏱️ 1.5 minutos
+
+*📌 Parate al centro, sin slides por ahora. Silencio de 2 segundos antes de hablar.*
+
+---
+
+🗣️ **"Tengo una pregunta para ustedes."**
+
+*📌 Pausa. Mira a la audiencia.*
+
+🗣️ **"¿Cuánto tiempo le toma a su equipo pasar de una idea de infraestructura... a tener esa infraestructura corriendo en producción en Azure?"**
+
+*📌 Pausa de 3 segundos. Deja que la pregunta aterrice.*
+
+🗣️ **"En la mayoría de las empresas que hemos visto... la respuesta es días. A veces semanas. Documentar, escribir el código Terraform, revisar errores, esperar aprobaciones, volver a empezar."**
+
+🗣️ **"Hoy les voy a mostrar cómo lo hacemos en menos de 3 minutos."**
+
+*📌 Proyecta la pantalla principal de TerraFormars. Deja que la imagen hable un segundo.*
+
+🗣️ **"Esto es TerraFormars. Una plataforma impulsada por Inteligencia Artificial que convierte lenguaje natural en infraestructura real de Azure, en tiempo récord."**
+
+---
+
+## 🎬 ACTO 2 — El Problema
+### ⏱️ 2 minutos
+
+*📌 Avanza a la diapositiva de "El Problema" o usa el diagrama de arquitectura manual como contexto.*
+
+---
+
+🗣️ **"Pero primero, hablemos del dolor."**
+
+🗣️ **"Si trabajas con infraestructura cloud hoy, probablemente vives esto todos los días:"**
+
+🗣️ **"Uno — escribir Terraform es complejo. No todo el mundo en tu equipo sabe HCL. Y los que saben, cometen errores: nombres de atributos incorrectos, SKUs inválidos, dependencias rotas."**
+
+🗣️ **"Dos — la gestión de múltiples cuentas de Azure es un caos. Credenciales dispersas, scripts manuales, sin visibilidad central."**
+
+🗣️ **"Tres — monitorear lo que desplegaste requiere abrir el portal de Azure, navegar entre pantallas, esperar que carguen las métricas."**
+
+🗣️ **"Cuatro — ejecutar un script de mantenimiento en 10 VMs significa conexión por SSH una a una. O configurar Azure Automation. O pagar por una herramienta externa."**
+
+*📌 Pausa dramática.*
+
+🗣️ **"Todo esto consume tiempo de tu equipo técnico. Tiempo que debería usarse en construir valor, no en luchar con la infraestructura."**
+
+🗣️ **"TerraFormars resuelve exactamente esos cuatro problemas. Uno por uno."**
+
+---
+
+## 🎬 ACTO 3 — La Solución
+### ⏱️ 1.5 minutos
+
+*📌 Muestra el dashboard principal de TerraFormars.*
+
+---
+
+🗣️ **"TerraFormars es una plataforma SaaS completa. Un solo lugar donde tu equipo puede:"**
+
+🗣️ **"Generar código Terraform con IA — sin saber HCL."**
+
+🗣️ **"Desplegar infraestructura directamente a Azure — con un clic."**
+
+🗣️ **"Monitorear recursos en tiempo real — sin salir de la plataforma."**
+
+🗣️ **"Ejecutar scripts en tus VMs — desde una consola web."**
+
+🗣️ **"Y administrar múltiples suscripciones de Azure — de forma segura y centralizada."**
+
+🗣️ **"Todo esto, construido sobre un stack moderno: Next.js en el frontend, NestJS en el backend, OpenAI GPT-4o como cerebro de IA, y Terraform CLI como motor de despliegue."**
+
+🗣️ **"Pero no me crean a mí. Déjenme mostrárselos."**
+
+---
+
+## 🎬 ACTO 4 — Demo en Vivo: El Generador de IA
+### ⏱️ 3 minutos
+
+*📌 Navega a la sección `/generator`. Ten el campo de descripción listo.*
+
+---
+
+🗣️ **"Voy a la sección de Generador de IA."**
+
+🗣️ **"Imaginen que necesitan una máquina virtual Linux en Azure, con una IP pública, y quieren que esté lista lo antes posible."**
+
+🗣️ **"Normalmente, un ingeniero tomaría 30 minutos o más escribiendo el código Terraform. Yo simplemente voy a describírselo a la IA."**
+
+*📌 Escribe en el campo: "Una VM Linux Ubuntu con 4GB de RAM, IP pública y un NSG que permita el puerto 22 y 80"*
+
+🗣️ **"Escribo en lenguaje natural lo que necesito..."**
+
+*📌 Haz clic en "Generar".*
+
+🗣️ **"Y en segundos..."**
+
+*📌 Espera el resultado — generalmente 5-10 segundos.*
+
+🗣️ **"Terraform listo. Código HCL completo, válido, listo para producción. Con las variables ya extraídas automáticamente."**
+
+*📌 Señala la sección de variables extraídas.*
+
+🗣️ **"Ven aquí — la plataforma detectó automáticamente los parámetros que el usuario puede personalizar: el nombre del recurso, la región, el tamaño de la VM."**
+
+*📌 Señala el costo estimado.*
+
+🗣️ **"Y esto — una estimación del costo mensual en USD. Directamente calculado por IA antes de tocar un solo recurso de Azure."**
+
+🗣️ **"Si el resultado no es exactamente lo que necesito, puedo refinarlo."**
+
+*📌 Escribe en el campo de refinamiento: "Agrega un disco de datos de 128GB".*
+
+🗣️ **"Le digo a la IA qué ajustar... y actualiza el código preservando todo lo anterior."**
+
+🗣️ **"Una vez conforme, lo guardo en la Librería para reutilizarlo cuando quiera."**
+
+---
+
+## 🎬 ACTO 5 — Demo en Vivo: El Despliegue
+### ⏱️ 3 minutos
+
+*📌 Navega a la Librería o al modal de despliegue. Ten un tenant de Azure configurado.*
+
+---
+
+🗣️ **"Ahora, desde la Librería, selecciono esta plantilla y hago clic en 'Desplegar'."**
+
+*📌 Abre el modal de despliegue.*
+
+🗣️ **"Elijo el Tenant de Azure — es decir, la suscripción a la que quiero desplegar. TerraFormars maneja múltiples cuentas de Azure de forma segura: los secrets están cifrados con AES-256."**
+
+🗣️ **"Ingreso los valores de las variables..."**
+
+*📌 Llena los campos rápidamente.*
+
+🗣️ **"Y ejecuto el despliegue."**
+
+*📌 Haz clic en "Ejecutar Despliegue".*
+
+🗣️ **"Observen esto."**
+
+*📌 Señala el terminal de logs en vivo.*
+
+🗣️ **"En tiempo real, están viendo los logs de Terraform corriendo contra Azure. terraform init, terraform apply. Cada línea que Terraform produce, aparece aquí en vivo gracias a WebSockets."**
+
+🗣️ **"No hay que abrir ninguna terminal. No hay que conectarse por SSH a un servidor. Todo desde el navegador."**
+
+*📌 Si el despliegue tarda, puedes avanzar y volver, o tener uno ya terminado listo.*
+
+🗣️ **"Cuando finaliza exitosamente, la plataforma registra automáticamente el inventario de recursos creados en Azure. Cada recurso queda trazado."**
+
+🗣️ **"Y si algo falla — TerraFormars no te deja solo. Analiza el error y te muestra un consejo inteligente: si es un problema de permisos, de cuotas, de configuración de red... te explica qué pasó y cómo resolverlo."**
+
+---
+
+## 🎬 ACTO 6 — Demo en Vivo: Administración y Monitoreo
+### ⏱️ 2 minutos
+
+*📌 Navega a /admin o /resources.*
+
+---
+
+🗣️ **"Pero TerraFormars no termina cuando el despliegue finaliza."**
+
+🗣️ **"En el panel de Administración, puedo ver todos los recursos que tengo en Azure, sin abrir el portal de Microsoft."**
+
+*📌 Muestra la lista de VMs, AKS clusters, App Services.*
+
+🗣️ **"Máquinas virtuales, clústeres de Kubernetes, App Services, bases de datos PostgreSQL, redes virtuales — todo en una sola vista."**
+
+🗣️ **"Y desde aquí puedo ejecutar scripts directamente en cualquier VM."**
+
+*📌 Si tienes una VM disponible, muestra la consola de scripts.*
+
+🗣️ **"Selecciono la VM, elijo un script de mi librería — por ejemplo, un script de monitoreo en Bash — y lo ejecuto. El resultado aparece aquí mismo. Sin SSH. Sin configurar nada extra."**
+
+*📌 Navega a /resources y muestra el monitoreo en tiempo real si tienes una VM activa.*
+
+🗣️ **"Y para las VMs desplegadas, hay monitoreo en tiempo real: CPU, memoria, tráfico de red, actividad de disco. Actualizándose cada 15 segundos, directo desde Azure Monitor."**
+
+---
+
+## 🎬 ACTO 7 — Arquitectura Técnica
+### ⏱️ 2 minutos
+
+*📌 Muestra el diagrama de arquitectura (el que generaste en Eraser.io o draw.io).*
+
+---
+
+🗣️ **"¿Cómo está construido por dentro?"**
+
+🗣️ **"El frontend es Next.js con Mantine UI. El backend es NestJS en TypeScript, con 10 módulos especializados."**
+
+🗣️ **"Los despliegues son 100% asíncronos: cuando ejecutas un deploy, se encola en Redis con BullMQ. Un worker lo procesa en background mientras tú puedes seguir usando la plataforma. Los logs llegan a tu pantalla por WebSocket."**
+
+🗣️ **"La IA usa GPT-4o con un prompt de sistema de más de 80 líneas de reglas específicas para Azure — para que el código generado no solo compile, sino que sea válido para producción desde el primer intento."**
+
+🗣️ **"La seguridad fue una prioridad desde el día uno: todos los secrets de Azure se cifran con AES-256 antes de tocar la base de datos. Las contraseñas de usuarios son hashes bcrypt. Los despliegues de Terraform corren en directorios temporales aislados."**
+
+🗣️ **"Y todo el sistema puede levantarse en cualquier servidor con un solo comando: `docker-compose up`."**
+
+---
+
+## 🎬 ACTO 8 — Cierre y Call to Action
+### ⏱️ 2 minutos
+
+*📌 Vuelve a la pantalla del dashboard o a una slide de cierre con el logo de Jhamf Group.*
+
+---
+
+🗣️ **"Recapitulemos lo que vieron hoy."**
+
+🗣️ **"Tomamos una descripción en lenguaje natural — sin escribir una sola línea de Terraform manualmente — y en menos de 3 minutos teníamos infraestructura real corriendo en Azure."**
+
+🗣️ **"TerraFormars no es un generador de código. Es una plataforma operativa completa: genera, despliega, monitorea, administra y automatiza. Todo en un solo lugar, para todos los equipos."**
+
+🗣️ **"Para el equipo de DevOps que quiere automatizar. Para el developer que necesita un ambiente rápido. Para el arquitecto que quiere ver el inventario completo de su infraestructura. Para el gerente que quiere controlar los costos antes de aprobar."**
+
+*📌 Pausa de 2 segundos. Mira a la audiencia directamente.*
+
+🗣️ **"Estamos en [fase / etapa actual — beta / lanzamiento / disponible]. Si quieren verlo funcionando sobre sus propias suscripciones de Azure, o si tienen un caso de uso específico que quieran explorar, estamos aquí."**
+
+🗣️ **"Los invito a acercarse, a scanear este QR, o a escribirnos directamente."**
+
+*📌 Muestra QR o datos de contacto.*
+
+🗣️ **"Soy [tu nombre], de Jhamf Group. Muchas gracias."**
+
+*📌 Pausa. Aplauso. Disponible para preguntas.*
+
+---
+
+## 💬 Banco de Respuestas para Preguntas Frecuentes
+
+| Pregunta | Respuesta sugerida |
+|---|---|
+| **¿Es seguro darle mis credenciales de Azure?** | "Los secrets nunca se almacenan en texto plano. Se cifran con AES-256 antes de persistirse. Y el acceso está completamente aislado por usuario." |
+| **¿Qué pasa si el código que genera la IA tiene errores?** | "Tenemos un sistema de refinamiento iterativo y el prompt de sistema incluye más de 80 reglas específicas para evitar los errores más comunes de Azure. Además, el análisis inteligente de logs te guía cuando algo falla." |
+| **¿Funciona con otros proveedores cloud como AWS o GCP?** | "Actualmente está optimizado para Azure con el provider azurerm v4.x. Es una decisión arquitectural — enfocarse en hacerlo muy bien para Azure antes de expandir." |
+| **¿Cuánto cuesta?** | *📌 Responder según el modelo de negocio actual.* |
+| **¿Se puede integrar con nuestro pipeline de CI/CD?** | "La API REST del backend está completamente documentada. La integración con pipelines existentes es una extensión natural." |
+| **¿Qué pasa con los recursos en Azure si elimino un despliegue?** | "TerraFormars intenta eliminar automáticamente el Resource Group en Azure para evitar cargos. El usuario tiene control total sobre esta decisión." |
+
+---
+
+*Guion generado para TerraFormars v1.1 — Jhamf Group S.A.S.*
+*Adaptar datos de contacto, QR y fase del producto antes de la presentación.*
