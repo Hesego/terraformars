@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   frontend:
-    image: jhamfgit/terraformars-frontend:latest
+    image: haquiceno2489/terraformars-frontend:latest
     networks:
       - jhamfstack
     deploy:
@@ -19,7 +19,7 @@ services:
         - traefik.http.routers.terraform-app.tls.certresolver=letsencryptresolver
 
   backend:
-    image: jhamfgit/terraformars-api:latest
+    image: haquiceno2489/terraformars-api:latest
     networks:
       - jhamfstack
     environment:
