@@ -81,7 +81,7 @@ export function DatabaseConsoleModal({ opened, onClose, deploymentId, resourceNa
             onClose={onClose} 
             title={
                 <Group gap="xs">
-                    <IconDatabase size={20} color="var(--mantine-color-jhamf-6)" />
+                    <IconDatabase size={20} color="var(--mantine-color-hesego-6)" />
                     <Text fw={700}>Consola SQL: {resourceName}</Text>
                 </Group>
             }
@@ -127,7 +127,7 @@ export function DatabaseConsoleModal({ opened, onClose, deploymentId, resourceNa
                             </ActionIcon>
                         </Tooltip>
                         <Button 
-                            color="jhamf" 
+                            color="hesego" 
                             onClick={handleSend} 
                             loading={connecting}
                             leftSection={<IconSend size={18} />}

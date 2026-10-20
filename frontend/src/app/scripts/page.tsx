@@ -87,7 +87,7 @@ export default function ScriptsPage() {
 
     if (authLoading || (loading && scripts.length === 0)) return (
         <DashboardLayout>
-            <Center h="70vh"><Loader color="jhamf.6" size="xl" /></Center>
+            <Center h="70vh"><Loader color="hesego.6" size="xl" /></Center>
         </DashboardLayout>
     );
 
@@ -119,7 +119,7 @@ export default function ScriptsPage() {
                     <Stack gap={0}>
                         <Group gap="xs">
                             {selectedLanguage && (
-                                <ActionIcon variant="subtle" color="jhamf" onClick={() => setSelectedLanguage(null)}>
+                                <ActionIcon variant="subtle" color="hesego" onClick={() => setSelectedLanguage(null)}>
                                     <IconArrowLeft size={18} />
                                 </ActionIcon>
                             )}
@@ -137,7 +137,7 @@ export default function ScriptsPage() {
                     </Stack>
                     <Button
                         variant="gradient"
-                        gradient={{ from: 'jhamf.6', to: 'jhamf.8' }}
+                        gradient={{ from: 'hesego.6', to: 'hesego.8' }}
                         leftSection={<IconPlus size={18} />}
                         onClick={handleCreate}
                     >
@@ -190,7 +190,7 @@ export default function ScriptsPage() {
                 ) : (
                     <>
                         <Box mb="xl">
-                            <Tabs value={selectedCategory} onChange={(v) => setSelectedCategory(v || 'all')} color="jhamf">
+                            <Tabs value={selectedCategory} onChange={(v) => setSelectedCategory(v || 'all')} color="hesego">
                                 <Tabs.List>
                                     {categories.map(cat => (
                                         <Tabs.Tab key={cat.value} value={cat.value}>
@@ -227,7 +227,7 @@ export default function ScriptsPage() {
                                             {script.language === 'powershell' ? <IconBrandPowershell size={20} /> : <IconTerminal2 size={20} />}
                                         </ThemeIcon>
                                         <Group gap={6}>
-                                            <Badge variant="filled" color="jhamf.6" size="sm">
+                                            <Badge variant="filled" color="hesego.6" size="sm">
                                                 {t(`scripts.categories.${script.category}`) || script.category || 'General'}
                                             </Badge>
                                         </Group>
@@ -245,7 +245,7 @@ export default function ScriptsPage() {
                                             {script.language === 'powershell' ? 'PowerShell' : 'Bash'}
                                         </Badge>
                                         <Group gap="xs">
-                                            <ActionIcon variant="subtle" color="jhamf" onClick={() => handleEdit(script)}>
+                                            <ActionIcon variant="subtle" color="hesego" onClick={() => handleEdit(script)}>
                                                 <IconEdit size={18} />
                                             </ActionIcon>
                                             <ActionIcon variant="subtle" color="red" onClick={() => handleDelete(script.id)}>
@@ -264,7 +264,7 @@ export default function ScriptsPage() {
                                         <IconCode size={34} />
                                     </ThemeIcon>
                                     <Text size="lg" fw={500} c="dimmed">{t('scripts.no_scripts')}</Text>
-                                    <Button variant="subtle" color="jhamf" onClick={handleCreate}>{t('scripts.create_first', { lang: selectedLanguage })}</Button>
+                                    <Button variant="subtle" color="hesego" onClick={handleCreate}>{t('scripts.create_first', { lang: selectedLanguage })}</Button>
                                 </Stack>
                             </Center>
                         )}

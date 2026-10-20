@@ -149,7 +149,7 @@ export function DeployModal({ opened, onClose, template, tenants, prefilledParam
                         fullWidth
                         loading={loading}
                         leftSection={<IconRocket size={16} />}
-                        gradient={{ from: 'jhamf.6', to: 'jhamf.8' }}
+                        gradient={{ from: 'hesego.6', to: 'hesego.8' }}
                         variant="gradient"
                         mt="md"
                     >

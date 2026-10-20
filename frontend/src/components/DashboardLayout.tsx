@@ -72,8 +72,8 @@ export function DashboardLayout({ children }: { children: React.ReactNode }) {
                         <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
                         <Group gap={2} align="center">
                             <img 
-                                src="/jhamfgroup.png" 
-                                alt="Jhamf Group Logo" 
+                                src="/logo.png" 
+                                alt="Hesego Ingeniería Logo" 
                                 style={{ 
                                     height: 'clamp(40px, 8vw, 60px)',
                                     width: 'auto',
@@ -119,7 +119,7 @@ export function DashboardLayout({ children }: { children: React.ReactNode }) {
                                     <Avatar
                                         size={28}
                                         radius="xl"
-                                        color="jhamf"
+                                        color="hesego"
                                         variant="filled"
                                     >
                                         {user?.name?.charAt(0).toUpperCase() || 'U'}
@@ -167,7 +167,7 @@ export function DashboardLayout({ children }: { children: React.ReactNode }) {
                         leftSection={<item.icon size="1.2rem" stroke={1.5} />}
                         active={pathname === item.href}
                         variant="light"
-                        color="jhamf"
+                        color="hesego"
                         mb={4}
                         style={{ borderRadius: '8px', fontWeight: 500 }}
                     />
@@ -214,14 +214,14 @@ export function DashboardLayout({ children }: { children: React.ReactNode }) {
                 <Box
                     style={{
                         height: '2px',
-                        background: 'linear-gradient(90deg, transparent 0%, var(--mantine-color-jhamf-filled) 40%, var(--mantine-color-jhamf-light-color) 60%, transparent 100%)',
+                        background: 'linear-gradient(90deg, transparent 0%, var(--mantine-color-hesego-filled) 40%, var(--mantine-color-hesego-light-color) 60%, transparent 100%)',
                     }}
                 />
 
                 <Group h={{ base: 'auto', sm: 54 }} py={{ base: 'md', sm: 0 }} px="xl" justify="space-between" wrap="wrap">
                     {/* Left: branding */}
                     <Group gap={2}>
-                        <img src="/jhamfgroup.png" alt="Logo" width={32} height={32} style={{ filter: 'drop-shadow(0 0 6px rgba(25, 118, 210, 0.2))' }} />
+                        <img src="/logo.png" alt="Logo" width={32} height={32} style={{ filter: 'drop-shadow(0 0 6px rgba(25, 118, 210, 0.2))' }} />
                         <Text
                             className="brand-logo-text"
                             size="xs"
@@ -242,7 +242,7 @@ export function DashboardLayout({ children }: { children: React.ReactNode }) {
                     {/* Right: version badge */}
                     <Badge
                         variant="dot"
-                        color="jhamf"
+                        color="hesego"
                         size="sm"
                         style={{ opacity: 0.8 }}
                     >

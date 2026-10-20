@@ -66,7 +66,7 @@ export default function ResourcesPage() {
         return (
             <DashboardLayout>
                 <Center h="60vh">
-                    <Loader size="xl" color="jhamf" variant="bars" />
+                    <Loader size="xl" color="hesego" variant="bars" />
                 </Center>
             </DashboardLayout>
         );
@@ -99,11 +99,11 @@ export default function ResourcesPage() {
                                     style={{ cursor: 'pointer', transition: 'all 0.2s ease' }}
                                 >
                                     <Group justify="space-between" mb="md">
-                                        <ThemeIcon size={44} radius="md" color="jhamf" variant="light">
+                                        <ThemeIcon size={44} radius="md" color="hesego" variant="light">
                                             <IconCloudComputing size={26} />
                                         </ThemeIcon>
                                         <Box>
-                                            <Badge variant="dot" color="jhamf">{tenantDeployments.length} {t('menu.deployments')}</Badge>
+                                            <Badge variant="dot" color="hesego">{tenantDeployments.length} {t('menu.deployments')}</Badge>
                                         </Box>
                                     </Group>
 
@@ -115,7 +115,7 @@ export default function ResourcesPage() {
                                             <Text size="xs" fw={700} c="dimmed" tt="uppercase">{t('resources.total_resources')}</Text>
                                             <Text fw={800} size="xl" c="terra">{totalResources}</Text>
                                         </Stack>
-                                        <ActionIcon variant="light" color="jhamf" radius="xl" size="lg">
+                                        <ActionIcon variant="light" color="hesego" radius="xl" size="lg">
                                             <IconChevronRight size={18} />
                                         </ActionIcon>
                                     </Group>

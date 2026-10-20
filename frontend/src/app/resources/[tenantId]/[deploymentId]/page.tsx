@@ -375,7 +375,7 @@ export default function DeploymentResourcesViewPage() {
                         mt="md" 
                         size="xs" 
                         variant="light" 
-                        color="jhamf"
+                        color="hesego"
                         leftSection={<IconTerminal2 size={14} />}
                         onClick={() => {
                             setConsoleResource(res);

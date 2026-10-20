@@ -57,7 +57,7 @@ export function MetricsDashboard({ resource, tenantId, resourceType }: MetricsDa
         return (
             <Center py="xl">
                 <Stack align="center" gap="xs">
-                    <Loader size="sm" color="jhamf" />
+                    <Loader size="sm" color="hesego" />
                     <Text size="sm" c="dimmed">Connecting to Azure Monitor...</Text>
                 </Stack>
             </Center>

@@ -109,8 +109,8 @@ export function TemplateDetailsModal({ opened, onClose, template, onDeploy, onUp
             <Stack>
                 <Group justify="space-between">
                     <Group>
-                        <Badge variant="filled" color="jhamf.6" size="lg">{template.category || 'Others'}</Badge>
-                        <Badge variant="light" color="jhamf.6" size="lg">{template.resource_type}</Badge>
+                        <Badge variant="filled" color="hesego.6" size="lg">{template.category || 'Others'}</Badge>
+                        <Badge variant="light" color="hesego.6" size="lg">{template.resource_type}</Badge>
                         <Badge variant="outline" color="gray">v1.0.0</Badge>
                     </Group>
                 </Group>
@@ -126,7 +126,7 @@ export function TemplateDetailsModal({ opened, onClose, template, onDeploy, onUp
                     )}
                 </Group>
 
-                <Tabs defaultValue="variables" color="jhamf.6">
+                <Tabs defaultValue="variables" color="hesego.6">
                     <Tabs.List>
                         <Tabs.Tab value="variables" leftSection={<IconListDetails size={16} />}>
                             {t('modals.template_details.variables')}
@@ -184,7 +184,7 @@ export function TemplateDetailsModal({ opened, onClose, template, onDeploy, onUp
                                         {isEditing && (
                                             <Button
                                                 leftSection={<IconDeviceFloppy size={16} />}
-                                                color="jhamf.6"
+                                                color="hesego.6"
                                                 onClick={handleSaveCode}
                                                 loading={saving}
                                             >
@@ -204,7 +204,7 @@ export function TemplateDetailsModal({ opened, onClose, template, onDeploy, onUp
                                         </Button>
                                         <Button
                                             variant="light"
-                                            color="jhamf.6"
+                                            color="hesego.6"
                                             leftSection={<IconEdit size={16} />}
                                             onClick={() => {
                                                 setEditedCode(template.terraform_code);
@@ -282,7 +282,7 @@ export function TemplateDetailsModal({ opened, onClose, template, onDeploy, onUp
                     mt="md"
                     size="md"
                     variant="gradient"
-                    gradient={{ from: 'jhamf.6', to: 'jhamf.8' }}
+                    gradient={{ from: 'hesego.6', to: 'hesego.8' }}
                     disabled={isEditing}
                 >
                     {t('modals.template_details.prepare_deployment')}

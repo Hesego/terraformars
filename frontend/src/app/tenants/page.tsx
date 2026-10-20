@@ -169,7 +169,7 @@ export default function TenantsPage() {
                                         input: {
                                             backgroundColor: 'rgba(255, 255, 255, 0.05)',
                                             border: '1px solid var(--mantine-color-default-border)',
-                                            '&:focus': { borderColor: 'var(--mantine-color-jhamf-5)' }
+                                            '&:focus': { borderColor: 'var(--mantine-color-hesego-5)' }
                                         }
                                     }}
                                 />
@@ -184,7 +184,7 @@ export default function TenantsPage() {
                                     input: {
                                         backgroundColor: 'rgba(255, 255, 255, 0.05)',
                                         border: '1px solid var(--mantine-color-default-border)',
-                                        '&:focus': { borderColor: 'var(--mantine-color-jhamf-5)' }
+                                        '&:focus': { borderColor: 'var(--mantine-color-hesego-5)' }
                                     }
                                 }}
                             />
@@ -195,7 +195,7 @@ export default function TenantsPage() {
                                 mt="lg"
                                 variant="gradient"
                                 radius="md"
-                                gradient={{ from: 'jhamf.6', to: 'jhamf.8' }}
+                                gradient={{ from: 'hesego.6', to: 'hesego.8' }}
                             >
                                 {t('common.connect')}
                             </Button>

@@ -37,7 +37,7 @@ export default function HomePage() {
 
   if (authLoading || (loading && !stats)) return (
     <DashboardLayout>
-      <Center h="70vh"><Loader color="jhamf.6" size="xl" /></Center>
+      <Center h="70vh"><Loader color="hesego.6" size="xl" /></Center>
     </DashboardLayout>
   );
 
@@ -59,7 +59,7 @@ export default function HomePage() {
 
   const typeConfig = resourceTypes.map((type, idx) => ({
     name: type,
-    color: `jhamf.${(idx % 5) * 2 + 1}`
+    color: `hesego.${(idx % 5) * 2 + 1}`
   }));
 
   return (
@@ -92,7 +92,7 @@ export default function HomePage() {
           />
 
           <Stack gap="xs">
-            <Badge color="jhamf.4" variant="light" size="lg" radius="sm">v1.1 Security Hardened</Badge>
+            <Badge color="hesego.4" variant="light" size="lg" radius="sm">v1.1 Security Hardened</Badge>
             <Title order={1} className="terraformars-title" style={{ fontSize: '3rem', fontWeight: 900, lineHeight: 1.1 }}>
               {t('dashboard.welcome')} TerraFormars
             </Title>
@@ -127,7 +127,7 @@ export default function HomePage() {
                     <div>
                       <Text fw={700} size="sm">{alert.title}</Text>
                       <Text size="xs" c="dimmed">{alert.message}</Text>
-                      <Badge size="xs" color="jhamf.6" mt="xs">{alert.tenant}</Badge>
+                      <Badge size="xs" color="hesego.6" mt="xs">{alert.tenant}</Badge>
                     </div>
                   </Group>
                 </Card>
@@ -163,7 +163,7 @@ export default function HomePage() {
 
           <Card withBorder style={{ borderRadius: '24px' }} p="xl" className="glass-card">
             <Group>
-              <ThemeIcon size="xl" radius="md" color="jhamf.6">
+              <ThemeIcon size="xl" radius="md" color="hesego.6">
                 <IconRocket size={24} />
               </ThemeIcon>
               <div>
@@ -201,7 +201,7 @@ export default function HomePage() {
         <SimpleGrid cols={{ base: 1, lg: 3 }} spacing="xl">
           <Card withBorder style={{ borderRadius: '24px', gridColumn: 'span 2' }} p="xl" className="glass-card">
             <Group mb="xl">
-              <ThemeIcon variant="light" color="jhamf.6" size="lg">
+              <ThemeIcon variant="light" color="hesego.6" size="lg">
                 <IconChartBar size={20} />
               </ThemeIcon>
               <Title order={4}>{t('dashboard.stats.weekly_trend')}</Title>
@@ -210,7 +210,7 @@ export default function HomePage() {
               h={300}
               data={stats.timeline}
               dataKey="date"
-              series={[{ name: 'count', color: 'jhamf.6', label: 'Deployments' }]}
+              series={[{ name: 'count', color: 'hesego.6', label: 'Deployments' }]}
               curveType="monotone"
               tickLine="y"
               gridAxis="xy"
@@ -222,13 +222,13 @@ export default function HomePage() {
           <Card withBorder style={{ borderRadius: '24px' }} p="xl" className="glass-card">
             <Group mb="xl" justify="space-between">
               <Group>
-                <ThemeIcon variant="light" color="jhamf.6" size="lg">
+                <ThemeIcon variant="light" color="hesego.6" size="lg">
                   <IconRocket size={20} />
                 </ThemeIcon>
                 <Title order={4}>{t('dashboard.stats.recent_activity.title')}</Title>
               </Group>
               <Link href="/deployments" style={{ textDecoration: 'none' }}>
-                <Text size="xs" c="jhamf.6" fw={600}>{t('dashboard.stats.recent_activity.view_all')}</Text>
+                <Text size="xs" c="hesego.6" fw={600}>{t('dashboard.stats.recent_activity.view_all')}</Text>
               </Link>
             </Group>
             <Stack gap="sm">
@@ -290,7 +290,7 @@ export default function HomePage() {
         <SimpleGrid cols={{ base: 1, sm: 2 }}>
           <Card component={Link} href="/generator" withBorder p="xl" className="glass-card" style={{ cursor: 'pointer', transition: 'transform 0.2s ease', borderRadius: '24px' }} onMouseEnter={(e: any) => e.currentTarget.style.transform = 'translateY(-4px)'} onMouseLeave={(e: any) => e.currentTarget.style.transform = 'translateY(0)'}>
             <Group>
-              <img src="/jhamfgroup.png" width={48} height={48} alt="Generator" />
+              <img src="/logo.png" width={48} height={48} alt="Generator" />
               <div>
                 <Text fw={700}>{t('menu.generator')}</Text>
                 <Text size="sm" c="dimmed">{t('dashboard.quick_start.generator_desc')}</Text>
@@ -299,7 +299,7 @@ export default function HomePage() {
           </Card>
           <Card component={Link} href="/tenants" withBorder p="xl" className="glass-card" style={{ cursor: 'pointer', transition: 'transform 0.2s ease', borderRadius: '24px' }} onMouseEnter={(e: any) => e.currentTarget.style.transform = 'translateY(-4px)'} onMouseLeave={(e: any) => e.currentTarget.style.transform = 'translateY(0)'}>
             <Group>
-              <img src="/jhamfgroup.png" width={48} height={48} alt="Tenants" />
+              <img src="/logo.png" width={48} height={48} alt="Tenants" />
               <div>
                 <Text fw={700}>{t('menu.tenants')}</Text>
                 <Text size="sm" c="dimmed">{t('dashboard.quick_start.tenants_desc')}</Text>

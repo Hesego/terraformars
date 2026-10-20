@@ -254,7 +254,7 @@ export default function DeploymentsPage() {
 
     if (authLoading || (loading && deployments.length === 0)) return (
         <DashboardLayout>
-            <Center h="100vh"><Loader color="jhamf.6" /></Center>
+            <Center h="100vh"><Loader color="hesego.6" /></Center>
         </DashboardLayout>
     );
 
@@ -320,7 +320,7 @@ export default function DeploymentsPage() {
                                             </Text>
                                         </Table.Td>
                                         <Table.Td>
-                                            <Badge variant="dot" color="jhamf.4">
+                                            <Badge variant="dot" color="hesego.4">
                                                 {formatDuration(d.created_at, d.finished_at)}
                                             </Badge>
                                         </Table.Td>
@@ -329,7 +329,7 @@ export default function DeploymentsPage() {
                                                 <Tooltip label="View Execution Logs">
                                                     <ActionIcon
                                                         variant="subtle"
-                                                        color="jhamf.6"
+                                                        color="hesego.6"
                                                         onClick={() => handleViewLogs(d)}
                                                     >
                                                         <IconTerminal2 size={18} />
@@ -375,7 +375,7 @@ export default function DeploymentsPage() {
                 size="xl"
                 radius="md"
             >
-                <Tabs value={activeTab} onChange={setActiveTab} color="jhamf">
+                <Tabs value={activeTab} onChange={setActiveTab} color="hesego">
                     <Tabs.List mb="md">
                         <Tabs.Tab value="logs" leftSection={<IconTerminal2 size={16} />}>Logs</Tabs.Tab>
                         <Tabs.Tab value="resources" leftSection={<IconBox size={16} />}>Recursos e Inventario</Tabs.Tab>
@@ -408,11 +408,11 @@ export default function DeploymentsPage() {
                                     }} 
                                 />
                                 <ScrollArea.Autosize mah={500} type="always" style={{ position: 'relative', zIndex: 2 }}>
-                                    <Code block bg="transparent" c="jhamf.0" style={{ fontSize: '12px', fontFamily: 'monospace' }}>
+                                    <Code block bg="transparent" c="hesego.0" style={{ fontSize: '12px', fontFamily: 'monospace' }}>
                                         {selectedDeployment?.logs || t('modals.logs.not_available')}
                                         {selectedDeployment?.status === 'running' && (
                                             <Box mt="xs">
-                                                <Loader size="xs" color="jhamf.4" variant="dots" />
+                                                <Loader size="xs" color="hesego.4" variant="dots" />
                                             </Box>
                                         )}
                                     </Code>
@@ -453,7 +453,7 @@ export default function DeploymentsPage() {
                                 {selectedDeployment?.resources_inventory?.map((res: any) => (
                                     <Card key={res.id} withBorder radius="md" p="md">
                                         <Group justify="space-between" mb="xs">
-                                            <ThemeIcon variant="light" color="jhamf" size="lg">
+                                            <ThemeIcon variant="light" color="hesego" size="lg">
                                                 {res.type.includes('virtual_machine') ? <IconDeviceDesktop size={20} /> : <IconBox size={20} />}
                                             </ThemeIcon>
                                             <Badge size="xs" variant="outline">{res.type.split('_').pop()}</Badge>
@@ -489,7 +489,7 @@ export default function DeploymentsPage() {
                                                 mt="md" 
                                                 size="xs" 
                                                 variant="light" 
-                                                color="jhamf"
+                                                color="hesego"
                                                 leftSection={<IconPlayerPlay size={14} />}
                                                 onClick={() => handleExecuteScript(res.id)}
                                                 loading={executingResourceId === res.id}

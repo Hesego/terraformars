@@ -14,7 +14,7 @@ export function LanguageSwitcher() {
     return (
         <Menu shadow="md" width={120}>
             <Menu.Target>
-                <ActionIcon variant="light" color="jhamf" size="lg" aria-label="Cambiar idioma">
+                <ActionIcon variant="light" color="hesego" size="lg" aria-label="Cambiar idioma">
                     <IconLanguage size="1.2rem" />
                 </ActionIcon>
             </Menu.Target>

@@ -58,7 +58,7 @@ export default function AdminPage() {
         return (
             <DashboardLayout>
                 <Center h="60vh">
-                    <Loader size="xl" color="jhamf" variant="bars" />
+                    <Loader size="xl" color="hesego" variant="bars" />
                 </Center>
             </DashboardLayout>
         );
@@ -69,7 +69,7 @@ export default function AdminPage() {
             <Stack gap="xl">
                 <Box>
                     <Group gap="xs" mb={4}>
-                        <ThemeIcon size={38} radius="md" color="jhamf" variant="light">
+                        <ThemeIcon size={38} radius="md" color="hesego" variant="light">
                             <IconShieldCog size={22} />
                         </ThemeIcon>
                         <Title order={1} style={{ fontFamily: 'var(--font-outfit)', fontWeight: 800 }}>
@@ -107,10 +107,10 @@ export default function AdminPage() {
                                     style={{ cursor: 'pointer', transition: 'all 0.2s ease' }}
                                 >
                                     <Group justify="space-between" mb="md">
-                                        <ThemeIcon size={44} radius="md" color="jhamf" variant="light">
+                                        <ThemeIcon size={44} radius="md" color="hesego" variant="light">
                                             <IconShieldCog size={26} />
                                         </ThemeIcon>
-                                        <ActionIcon variant="light" color="jhamf" radius="xl" size="lg">
+                                        <ActionIcon variant="light" color="hesego" radius="xl" size="lg">
                                             <IconChevronRight size={18} />
                                         </ActionIcon>
                                     </Group>

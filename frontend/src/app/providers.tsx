@@ -11,9 +11,9 @@ import '../i18n';
 import { AuthProvider } from '@/context/AuthContext';
 
 const theme = createTheme({
-    primaryColor: 'jhamf',
+    primaryColor: 'hesego',
     colors: {
-        jhamf: [
+        hesego: [
             '#f0f7ff',
             '#e0efff',
             '#badaff',

@@ -124,7 +124,7 @@ export default function LibraryPage() {
 
     if (authLoading || (loading && templates.length === 0)) return (
         <DashboardLayout>
-            <Center h="70vh"><Loader color="jhamf.6" size="xl" /></Center>
+            <Center h="70vh"><Loader color="hesego.6" size="xl" /></Center>
         </DashboardLayout>
     );
 
@@ -140,7 +140,7 @@ export default function LibraryPage() {
                         component={Link}
                         href="/generator"
                         variant="gradient"
-                        gradient={{ from: 'jhamf.6', to: 'jhamf.8' }}
+                        gradient={{ from: 'hesego.6', to: 'hesego.8' }}
                         leftSection={<IconCode size={18} />}
                         w={{ base: '100%', sm: 'auto' }}
                     >
@@ -148,7 +148,7 @@ export default function LibraryPage() {
                     </Button>
                 </Group>
 
-                <Tabs value={activeCategory} onChange={setActiveCategory} variant="pills" color="jhamf">
+                <Tabs value={activeCategory} onChange={setActiveCategory} variant="pills" color="hesego">
                     <Tabs.List style={{ overflowX: 'auto', flexWrap: 'nowrap', paddingBottom: '8px' }}>
                         {categories.map(cat => (
                             <Tabs.Tab key={cat} value={cat}>
@@ -176,7 +176,7 @@ export default function LibraryPage() {
                                 >
                                     <Group justify="space-between" mb="sm" wrap="nowrap">
                                         <Group gap={6}>
-                                            <Badge variant="filled" color="jhamf.6" size="sm" radius="xs">
+                                            <Badge variant="filled" color="hesego.6" size="sm" radius="xs">
                                                 {templateItem.category || 'Others'}
                                             </Badge>
                                             <Badge variant="light" color="gray" size="sm" radius="xs">
@@ -206,14 +206,14 @@ export default function LibraryPage() {
                                     <SimpleGrid cols={2} mt="auto" spacing="xs">
                                         <Button
                                             variant="light"
-                                            color="jhamf"
+                                            color="hesego"
                                             leftSection={<IconEye size={16} />}
                                             onClick={() => handleOpenDetails(templateItem)}
                                         >
                                             {t('common.details')}
                                         </Button>
                                         <Button
-                                            color="jhamf"
+                                            color="hesego"
                                             onClick={(e) => {
                                                 e.stopPropagation();
                                                 handleOpenDeploy(templateItem);

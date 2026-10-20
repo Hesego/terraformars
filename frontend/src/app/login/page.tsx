@@ -103,7 +103,7 @@ function LoginForm() {
                     filter: 'drop-shadow(0 0 20px rgba(25, 118, 210, 0.3))',
                             }}
                         >
-                            <img src="/jhamfgroup.png" alt="Jhamf Group Logo" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                            <img src="/logo.png" alt="Hesego Ingeniería Logo" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                         </Box>
                         <Title
                             order={1}
@@ -194,9 +194,9 @@ function LoginForm() {
                                         size="md"
                                         loading={loading}
                                         variant="gradient"
-                                        gradient={{ from: 'jhamf.6', to: 'jhamf.8' }}
+                                        gradient={{ from: 'hesego.6', to: 'hesego.8' }}
                                         radius="md"
-                                        leftSection={<img src="/jhamfgroup.png" width={24} height={24} />}
+                                        leftSection={<img src="/logo.png" width={24} height={24} />}
                                         mt="xs"
                                         style={{
                                             boxShadow: '0 4px 20px rgba(25, 118, 210, 0.3)',
@@ -224,7 +224,7 @@ function LoginForm() {
 
 export default function LoginPage() {
     return (
-        <Suspense fallback={<Center h="100vh"><Loader color="jhamf.6" size="xl" /></Center>}>
+        <Suspense fallback={<Center h="100vh"><Loader color="hesego.6" size="xl" /></Center>}>
             <LoginForm />
         </Suspense>
     );

@@ -77,7 +77,7 @@ body {
 
 [data-mantine-color-scheme="dark"] .terraformars-subtitle,
 [data-mantine-color-scheme="dark"] .hero-subtitle {
-  color: var(--mantine-color-jhamf-1) !important;
+  color: var(--mantine-color-hesego-1) !important;
   opacity: 0.8;
 }
 

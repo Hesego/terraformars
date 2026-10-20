@@ -59,7 +59,7 @@
             "generator_desc": "Use AI to create infrastructure code in seconds.",
             "tenants_desc": "Set up your credentials for direct deployment."
         },
-        "footer": "© {{year}} Jhamf Group S.A.S — All rights reserved"
+        "footer": "© {{year}} Hesego Ingeniería — All rights reserved"
     },
     "generator": {
         "title": "AI Terraform Generator",

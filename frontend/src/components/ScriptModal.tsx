@@ -165,7 +165,7 @@ export function ScriptModal({ opened, onClose, script, onSave }: ScriptModalProp
                 <Group justify="flex-end" mt="md">
                     <Button variant="light" color="gray" onClick={onClose}>Cancelar</Button>
                     <Button 
-                        color="jhamf" 
+                        color="hesego" 
                         leftSection={<IconDeviceFloppy size={18} />} 
                         onClick={handleSave}
                         loading={loading}

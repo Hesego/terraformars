@@ -236,7 +236,7 @@ export default function GeneratorPage() {
                             />
                             <Button
                                 variant="gradient"
-                                gradient={{ from: 'jhamf.6', to: 'jhamf.8' }}
+                                gradient={{ from: 'hesego.6', to: 'hesego.8' }}
                                 onClick={handleGenerate}
                                 leftSection={<IconSend size={16} />}
                                 fullWidth
@@ -252,7 +252,7 @@ export default function GeneratorPage() {
                         <Group justify="space-between" align="center" wrap="wrap" gap="md">
                             <Group gap="xs" wrap="wrap">
                                 <Title order={4}>{result.name}</Title>
-                                <Badge color="jhamf.6">{category || result.category || 'Uncategorized'}</Badge>
+                                <Badge color="hesego.6">{category || result.category || 'Uncategorized'}</Badge>
                                 {result.estimated_cost !== undefined && (
                                     <Badge variant="dot" color="green" size="lg">
                                         Est. ${result.estimated_cost}/mo
@@ -269,7 +269,7 @@ export default function GeneratorPage() {
                                     {t('generator.save_to_library')}
                                 </Button>
                                 <Button
-                                    color="jhamf.6"
+                                    color="hesego.6"
                                     leftSection={<IconRocket size={16} />}
                                     onClick={handleDeployNow}
                                     w={{ base: '100%', xs: 'calc(50% - 6px)', sm: 'auto' }}
@@ -283,7 +283,7 @@ export default function GeneratorPage() {
                             <Card withBorder p="xl" className="glass-card" style={{ borderRadius: '24px' }}>
                                 <Group justify="space-between" mb="md">
                                     <Group gap="xs">
-                                        <IconSettings2 size={24} color="var(--mantine-color-jhamf-6)" />
+                                        <IconSettings2 size={24} color="var(--mantine-color-hesego-6)" />
                                         <Title order={5}>{t('generator.dynamic_scaling')}</Title>
                                     </Group>
                                     <Button
@@ -333,7 +333,7 @@ export default function GeneratorPage() {
                         <Card withBorder p={0} className="glass-card" style={{ borderRadius: '24px', overflow: 'hidden' }}>
                             <Box p="md" style={{ borderBottom: '1px solid var(--glass-border)', backgroundColor: 'var(--glass-input-bg)' }}>
                                 <Group gap="xs">
-                                    <IconCode size={20} color="var(--mantine-color-jhamf-6)" />
+                                    <IconCode size={20} color="var(--mantine-color-hesego-6)" />
                                     <Text fw={600} size="sm">Main configuration (main.tf)</Text>
                                 </Group>
                             </Box>
@@ -350,7 +350,7 @@ export default function GeneratorPage() {
 
                         <Card withBorder p="xl" className="glass-card" style={{ borderRadius: '24px' }}>
                             <Group gap="xs" mb="lg">
-                                <IconBrackets size={24} color="var(--mantine-color-jhamf-6)" />
+                                <IconBrackets size={24} color="var(--mantine-color-hesego-6)" />
                                 <Title order={5}>{t('generator.extracted_variables')}</Title>
                             </Group>
                             <Stack gap="md">
@@ -362,7 +362,7 @@ export default function GeneratorPage() {
                                         transition: 'all 0.2s ease',
                                     }}>
                                         <Stack gap={2} style={{ overflow: 'hidden' }}>
-                                            <Text fw={700} size="sm" c="jhamf.5" truncate>{v.name}</Text>
+                                            <Text fw={700} size="sm" c="hesego.5" truncate>{v.name}</Text>
                                             <Text size="xs" c="dimmed" lineClamp={2}>{v.description || t('generator.no_description')}</Text>
                                         </Stack>
                                         <Badge variant="light" size="sm" color="gray" radius="sm" style={{ flexShrink: 0 }}>

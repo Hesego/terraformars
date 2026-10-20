@@ -71,7 +71,7 @@ export function ClusterVisualizer({ nodes, pods, loading }: ClusterVisualizerPro
                             <Text size="xs" c="dimmed" fw={700} tt="uppercase">System Version</Text>
                             <Text size="lg" fw={800} truncate>{nodes[0]?.status?.nodeInfo?.kubeletVersion || 'v1.27.x'}</Text>
                         </Stack>
-                        <ThemeIcon color="jhamf" variant="light" size={42} radius="md">
+                        <ThemeIcon color="hesego" variant="light" size={42} radius="md">
                             <IconCpu size={24} />
                         </ThemeIcon>
                     </Group>

@@ -1,6 +1,6 @@
 # 🎤 Guion de Presentación — TerraFormars
 ### Evento / Conferencia — 15 a 20 minutos
-**Jhamf Group S.A.S.**
+**Hesego Ingeniería**
 
 ---
 
@@ -235,7 +235,7 @@
 ## 🎬 ACTO 8 — Cierre y Call to Action
 ### ⏱️ 2 minutos
 
-*📌 Vuelve a la pantalla del dashboard o a una slide de cierre con el logo de Jhamf Group.*
+*📌 Vuelve a la pantalla del dashboard o a una slide de cierre con el logo de Hesego Ingeniería.*
 
 ---
 
@@ -255,7 +255,7 @@
 
 *📌 Muestra QR o datos de contacto.*
 
-🗣️ **"Soy [tu nombre], de Jhamf Group. Muchas gracias."**
+🗣️ **"Soy [tu nombre], de Hesego Ingeniería. Muchas gracias."**
 
 *📌 Pausa. Aplauso. Disponible para preguntas.*
 
@@ -274,5 +274,5 @@
 
 ---
 
-*Guion generado para TerraFormars v1.1 — Jhamf Group S.A.S.*
+*Guion generado para TerraFormars v1.1 — Hesego Ingeniería*
 *Adaptar datos de contacto, QR y fase del producto antes de la presentación.*

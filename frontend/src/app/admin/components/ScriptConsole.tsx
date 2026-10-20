@@ -129,7 +129,7 @@ export function ScriptConsole({ tenantId, resourceId, resourceName, resourceGrou
                 />
                 <Button
                     leftSection={<IconTerminal2 size={16} />}
-                    color="jhamf"
+                    color="hesego"
                     onClick={handleExecute}
                     loading={executing}
                     disabled={!selectedScript || executing}
@@ -158,7 +158,7 @@ export function ScriptConsole({ tenantId, resourceId, resourceName, resourceGrou
                                 {executionStatus}
                             </Badge>
                         )}
-                        {executing && <Loader size="xs" color="jhamf" />}
+                        {executing && <Loader size="xs" color="hesego" />}
                     </Group>
                     <ScrollArea h={240}>
                         <Paper
